@@ -12,6 +12,23 @@
 <body <?php body_class(); ?>>
     <header>
         <div class="header-inner">
-   header
+            <div class="site-title">
+                <h1><a href="<?php echo home_url(); ?>">
+                <?php bloginfo('name'); ?>
+            </a></h1>
+            </div>
+            <!--mobile button-->
+<button type="button" id="navbutton">
+ <i class="fas fa-list-ul"></i><
+</button>
+
 </div>
+ <!--Header Menu  -->
+ <?php wp_nav_menu(array(
+    'theme_location' => 'header-nav',
+    'container' => 'nav',
+    'container-class' => 'header-nav',
+    'container-id' => 'header-nav',
+    'fallback_cb' => ' '
+)); ?>
 </header>

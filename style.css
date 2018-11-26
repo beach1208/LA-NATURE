@@ -104,3 +104,21 @@ footer {
   height: 250px;
 }
 /*------------------------*/
+
+@media (min-width: 768px) {
+  .container:after {
+    clear: both;
+    content: "";
+  }
+
+  .contents {
+    float: left;
+    width: 70%;
+    margin-right: 2%;
+  }
+
+  #sidebar {
+    float: right;
+    width: 28%;
+  }
+}
