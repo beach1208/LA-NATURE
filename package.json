@@ -1,0 +1,25 @@
+{
+  "name": "mystyleblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beach1208/Original-Wordpress-Theme.git"
+  },
+  "author": "Nagisa Kojima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beach1208/Original-Wordpress-Theme/issues"
+  },
+  "homepage": "https://github.com/beach1208/Original-Wordpress-Theme#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

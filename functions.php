@@ -1,4 +1,16 @@
 <?php
+function my_styles()
+{
+    wp_enqueue_style('basic-style', get_template_directory_uri() . '/css/base.css');
+    wp_enqueue_style('google_fonts', "https://fonts.googleapis.com/css?family=Merriweather|Noto+San");
+    wp_enqueue_style('fontawesome', "https://use.fontawesome.com/releases/v5.0.13/css/all.css");
+
+
+}
+add_action('wp_enqueue_scripts', 'my_styles');
+
+
+
 //テーマのセットアップ
 // titleタグをhead内に生成する
 add_theme_support('title-tag');
