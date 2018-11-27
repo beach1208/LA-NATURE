@@ -26,3 +26,18 @@ add_theme_support('post-thumbnails');
 // Verify header and footer navigation bar 
 register_nav_menu('header-nav', 'header-navigation');
 register_nav_menu('footer-nav', 'footer-navigation');
+
+//Add widgets to side bar
+function widgetarea_init()
+{
+    register_sidebar(array(
+        'name' => 'サイドバー',
+        'id' => 'side-widget',
+        'before_widget' => '<div id="%1$s" class="%2$s sidebar-wrapper">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4 class="sidebar-title">',
+        'after_title' => '</h4>'
+    ));
+}
+add_action('widgets_init', 'widgetarea_init');
+    
