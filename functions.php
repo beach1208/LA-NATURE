@@ -1,4 +1,6 @@
 <?php
+
+// Style-sheet function
 function my_styles()
 {
     wp_enqueue_style('basic-style', get_template_directory_uri() . '/css/base.css');
@@ -21,6 +23,6 @@ add_theme_support('automatic-feed-links');
 //アイキャッチ画像を使用する設定
 add_theme_support('post-thumbnails');
 
-
+// Verify header and footer navigation bar 
 register_nav_menu('header-nav', 'header-navigation');
 register_nav_menu('footer-nav', 'footer-navigation');
