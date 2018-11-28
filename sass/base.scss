@@ -1,4 +1,5 @@
 @import "footer";
+@import "sidebar";
 body {
   /*body basic style*/
   font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro",
@@ -126,16 +127,8 @@ footer {
   height: 200px;
 }
 
-.container {
-  background-color: #9db2ea;
-}
-
 .contents {
   background-color: #a5e2ff;
-}
-
-#sidebar {
-  background-color: #aefffc;
 }
 
 footer {

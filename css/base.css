@@ -9,6 +9,25 @@
   text-align: right;
 }
 
+/*------side bar------*/
+.sidebar-wrapper {
+  margin-bottom: 2rem;
+  padding: 10px;
+}
+
+.sidebar-wrapper h4 {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 7px 10px;
+  color: #fff;
+  background-color: #464646;
+}
+
+.sidebar-wrapper li {
+  list-style: none;
+}
+
 body {
   /*body basic style*/
   font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -135,16 +154,8 @@ footer {
   height: 200px;
 }
 
-.container {
-  background-color: #9db2ea;
-}
-
 .contents {
   background-color: #a5e2ff;
-}
-
-#sidebar {
-  background-color: #aefffc;
 }
 
 footer {

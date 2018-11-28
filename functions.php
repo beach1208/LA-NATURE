@@ -31,7 +31,7 @@ register_nav_menu('footer-nav', 'footer-navigation');
 function widgetarea_init()
 {
     register_sidebar(array(
-        'name' => 'サイドバー',
+        'name' => 'sidebar',
         'id' => 'side-widget',
         'before_widget' => '<div id="%1$s" class="%2$s sidebar-wrapper">',
         'after_widget' => '</div>',
