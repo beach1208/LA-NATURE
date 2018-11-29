@@ -1,5 +1,6 @@
 @import "footer";
 @import "sidebar";
+@import "main-article";
 body {
   /*body basic style*/
   font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro",
@@ -54,7 +55,7 @@ footer {
 
 /* size of contents */
 .header-inner,
-.container,
+.main-container,
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -63,24 +64,12 @@ footer {
   box-sizing: border-box;
 }
 
-.contents,
-#sidebar {
-  margin: 20px 0;
-}
+//
 
-.container {
-  display: flex;
-}
-
-.contents {
-  width: 70%;
-  margin-right: 2%;
-}
-
-#sidebar {
-  float: left;
-  width: 28%;
-}
+// #sidebar {
+//   float: left;
+//   width: 28%;
+// }
 
 /* Top sns nav bar */
 .social-icons {
@@ -117,10 +106,6 @@ footer {
 .header-inner {
   background-color: #ccc;
   height: 200px;
-}
-
-.contents {
-  background-color: #a5e2ff;
 }
 
 footer {
