@@ -1,4 +1,6 @@
+
 <footer>
+
   <div class="footer-inner">
     <div class="footer-nav-area">
 
@@ -17,7 +19,9 @@
   <p>copyright ©<?php bloginfo('name'); ?> All Rights Reserved.</p>
 </div>
   </div>
+
 </footer>
+
 <?php wp_footer(); ?><!--システム・プラグイン用-->
 </body>
 </html>

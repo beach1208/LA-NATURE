@@ -1,11 +1,52 @@
-.footer-nav-area {
-  ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
+footer {
+  p {
+    margin: 0;
+  }
+
+  .footer-nav-area {
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+    }
   }
 }
 
-.copyright p {
-  text-align: right;
-}
+/*フッターメニュー*/
+// .footer-nav {
+//   margin-bottom: 20px;
+// }
+
+// .footer-nav ul {
+//   margin: 0;
+//   padding: 0;
+//   list-style: none;
+// }
+
+// .footer-nav ul:after {
+//   display: block;
+//   clear: both;
+//   content: "";
+// }
+
+// .footer-nav li {
+//   float: left;
+//   width: 50%;
+//   text-align: center;
+// }
+
+// .footer-nav li a {
+//   font-size: 0.9em;
+//   display: block;
+//   padding: 10px 5px;
+//   text-decoration: none;
+//   color: #fff;
+// }
+
+// .footer-nav li a:hover {
+//   opacity: 0.6;
+// }
+
+// .copyright p {
+//   text-align: right;
+// }

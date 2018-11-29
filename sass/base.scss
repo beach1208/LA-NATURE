@@ -21,7 +21,8 @@ h4,
 h5,
 h6,
 ul,
-li {
+li,
+p {
   margin: 0;
   padding: 0;
 }
@@ -67,14 +68,11 @@ footer {
   margin: 20px 0;
 }
 
-.container:after {
-  display: block;
-  clear: both;
-  content: "";
+.container {
+  display: flex;
 }
 
 .contents {
-  float: left;
   width: 70%;
   margin-right: 2%;
 }
@@ -87,18 +85,16 @@ footer {
 /* Top sns nav bar */
 .social-icons {
   background: #c29fb4;
-}
-
-.social-icons ul {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-  padding: 0;
-}
-
-.social-icons li {
-  list-style: none;
-  margin-right: 10px;
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    margin-right: 10px;
+  }
 }
 
 /* nav button */
@@ -117,10 +113,6 @@ footer {
 }
 
 /* temporary style----------*/
-.contents,
-#sidebar {
-  height: 800px;
-}
 
 .header-inner {
   background-color: #ccc;
@@ -133,11 +125,6 @@ footer {
 
 footer {
   background-color: #777;
-}
-
-.footer-inner {
-  background-color: #ddd;
-  height: 250px;
 }
 
 /* Site title styles */
@@ -156,6 +143,7 @@ footer {
   text-decoration: none;
   color: #c29fb4;
 }
+
 /*------------------------*/
 
 @media (max-width: 768px) {

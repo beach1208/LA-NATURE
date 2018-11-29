@@ -11,6 +11,7 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+
     <header>
         <div class="header-inner">
         <div class="social-icons">
