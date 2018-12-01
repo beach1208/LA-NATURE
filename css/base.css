@@ -276,6 +276,53 @@ header {
   color: #c29fb4;
 }
 
+.pagination {
+  margin: 40px 0 30px;
+  text-align: center;
+}
+
+.pagination ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination li {
+  display: inline-block;
+  width: auto;
+}
+
+.pagination li a,
+.pagination li > span {
+  font-size: 0.9em;
+  display: block;
+  width: 30px;
+  margin: 0 1px;
+  padding: 5px 0;
+  text-decoration: none;
+  color: #000;
+  border: solid 1px #ccc;
+  border-radius: 3px;
+}
+
+.pagination li > span {
+  color: #fff;
+  background-color: #464646;
+}
+
+.pagination li a:hover {
+  color: #fff;
+  background-color: #464646;
+}
+
+.pagination li .dots {
+  width: 15px;
+  padding: 0;
+  color: #000;
+  border-color: transparent;
+  background-color: transparent;
+}
+
 /*------------------------*/
 @media (max-width: 768px) {
   /* nav bar button for responsive */

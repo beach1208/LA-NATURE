@@ -2,6 +2,7 @@
 <div class="main-container">
     <div class="row contents">
         <div class="col-md-8">
+
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <article <?php post_class('article-list'); ?>>
         <a href="<?php the_permalink(); ?>">
@@ -42,10 +43,25 @@
 <?php endwhile;
 endif; ?>
 
+<div class="pagination">
+    <?php echo paginate_links(array(
+        'type' => 'list',
+        'mid_size' => '1',
+        'prev_text' => '&laquo;',
+        'next_text' => '&raquo;'
+    )); ?>
+</div>
+
+
+
+
     </div>
     <div class="col-md-4">
     <?php get_sidebar(); ?>
 </div>
 </div>
 </div>
+
+
+
 <?php get_footer(); ?>
