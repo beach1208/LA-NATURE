@@ -12,7 +12,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-    <header>
+    <header id="header">
         <div class="header-inner">
         <div class="social-icons">
                 <ul>
@@ -21,12 +21,14 @@
                     <li>dribble</li>
                 </ul>
             </div>
-          
-            <div class="site-title">
+
+<div class="site-title">
                 <h1><a href="<?php echo home_url(); ?>">
                 <?php bloginfo('name'); ?>
             </a></h1>
             </div>
+            
+     
             <!--mobile button-->
 <button type="button" id="navbutton">
  <i class="fas fa-list-ul"></i>

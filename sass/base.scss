@@ -1,6 +1,7 @@
 @import "footer";
 @import "sidebar";
 @import "main-article";
+@import "variable";
 body {
   /*body basic style*/
   font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro",
@@ -48,11 +49,6 @@ header {
   border-bottom: solid 1px #ddd;
 }
 
-/*Horizontal line above footer*/
-footer {
-  border-top: solid 1px #ddd;
-}
-
 /* size of contents */
 .header-inner,
 .main-container,
@@ -64,16 +60,19 @@ footer {
   box-sizing: border-box;
 }
 
-//
-
-// #sidebar {
-//   float: left;
-//   width: 28%;
-// }
+.header-inner {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.23),
+      rgba(255, 255, 255, 0.86)
+    ),
+    url(../../MyStyleBlog/img/header5.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+}
 
 /* Top sns nav bar */
 .social-icons {
-  background: #c29fb4;
+  background: $main-pink;
   ul {
     display: flex;
     justify-content: flex-end;
@@ -99,17 +98,6 @@ footer {
 
 #menu-header-nav li {
   list-style: none;
-}
-
-/* temporary style----------*/
-
-.header-inner {
-  background-color: #ccc;
-  height: 200px;
-}
-
-footer {
-  background-color: #777;
 }
 
 /* Site title styles */

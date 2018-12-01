@@ -21,6 +21,8 @@ add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 
 add_theme_support('automatic-feed-links');
 //アイキャッチ画像を使用する設定
 add_theme_support('post-thumbnails');
+//custom-header
+// add_theme_support('custom-header');
 
 // Verify header and footer navigation bar 
 register_nav_menu('header-nav', 'header-navigation');

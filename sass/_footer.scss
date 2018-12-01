@@ -1,3 +1,5 @@
+@import "variable";
+
 footer {
   p {
     margin: 0;
@@ -12,23 +14,11 @@ footer {
   }
 }
 
-/*フッターメニュー*/
-// .footer-nav {
-//   margin-bottom: 20px;
-// }
-
-// .footer-nav ul {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-// }
-
-// .footer-nav ul:after {
-//   display: block;
-//   clear: both;
-//   content: "";
-// }
-
+/*Horizontal line above footer*/
+footer {
+  border-top: solid 1px #ddd;
+  background-color: $main-pink;
+}
 // .footer-nav li {
 //   float: left;
 //   width: 50%;

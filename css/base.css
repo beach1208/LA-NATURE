@@ -9,7 +9,12 @@ footer .footer-nav-area ul {
   list-style: none;
 }
 
-/*フッターメニュー*/
+/*Horizontal line above footer*/
+footer {
+  border-top: solid 1px #ddd;
+  background-color: #f5e1eb;
+}
+
 /*------side bar------*/
 .sidebar-wrapper {
   margin-bottom: 2rem;
@@ -205,11 +210,6 @@ header {
   border-bottom: solid 1px #ddd;
 }
 
-/*Horizontal line above footer*/
-footer {
-  border-top: solid 1px #ddd;
-}
-
 /* size of contents */
 .header-inner,
 .main-container,
@@ -221,9 +221,15 @@ footer {
   box-sizing: border-box;
 }
 
+.header-inner {
+  background: linear-gradient(rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.86)), url(../../MyStyleBlog/img/header5.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+}
+
 /* Top sns nav bar */
 .social-icons {
-  background: #c29fb4;
+  background: #f5e1eb;
 }
 
 .social-icons ul {
@@ -251,16 +257,6 @@ footer {
 
 #menu-header-nav li {
   list-style: none;
-}
-
-/* temporary style----------*/
-.header-inner {
-  background-color: #ccc;
-  height: 200px;
-}
-
-footer {
-  background-color: #777;
 }
 
 /* Site title styles */

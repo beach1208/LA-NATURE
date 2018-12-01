@@ -1,8 +1,4 @@
-//container layout of articles
-// .main-container {
-//   display: flex;
-// }
-
+@import "variable";
 //articles styles
 .article-list {
   margin: 0 0 15px;
@@ -65,9 +61,3 @@
     background-color: #464646;
   }
 }
-
-// @media (max-width: 768px) {
-//   .main-container {
-//     flex-direction: column;
-//   }
-// }
