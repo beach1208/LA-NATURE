@@ -1,6 +1,7 @@
 <?php get_header(); ?>
-<div class="container">
-    <div class="contents">
+<div class="main-container">
+    <div class="row contents">
+    <div class="col-md-8">
 
 <!-- loop for single article -->
 
@@ -32,13 +33,30 @@
 <?php endif; ?>
 </div>
 
-</article>
+<!-- title -->
+<h1><?php the_title(); ?></h1>
 
+<!-- thumbnail -->
+
+<?php if (has_post_thumbnail()) : ?>
+<div class="article-img">
+    <?php the_post_thumbnail('large'); ?>
+</div>
 <?php endif; ?>
 
-
+<!-- main contents -->
+<?php the_content(); ?>
+<!-- tag -->
+<div class="article-tag">
+    <?php the_tags('<ul><li>Tag: </li><li>', '</li><li>', '</li></ul>'); ?>
+</div>
+</article>
+<?php endif; ?>
 
     </div>
+    <div class="col-md-4">
     <?php get_sidebar(); ?>
+    </div>
+</div>
 </div>
 <?php get_footer(); ?>
