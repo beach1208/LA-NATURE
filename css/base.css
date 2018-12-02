@@ -164,6 +164,65 @@ footer {
   background-color: #464646;
 }
 
+.article {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 25px 25px;
+}
+
+.article h1 {
+  font-size: 1.7em;
+  margin: 0.3em 0;
+}
+
+.article p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.article-info .cat-data a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.article-info .cat-data a:hover {
+  opacity: 0.8;
+}
+
+.article-img {
+  max-width: 640px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+/*Tag*/
+.article-tag {
+  text-align: right;
+}
+
+.article-tag ul {
+  list-style: none;
+}
+
+.article-tag li {
+  display: inline-block;
+  color: #464646;
+}
+
+.article-tag li a {
+  font-size: 0.8em;
+  margin-right: 7px;
+  padding: 2px 7px;
+  text-decoration: none;
+  color: #464646;
+  border: solid 1px #464646;
+  border-radius: 2px;
+}
+
+.article-tag li a:hover {
+  opacity: 0.8;
+}
+
 body {
   /*body basic style*/
   font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;

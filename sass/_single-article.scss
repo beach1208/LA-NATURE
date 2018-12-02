@@ -1,0 +1,59 @@
+@import "variable";
+.article {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 25px 25px;
+
+  h1 {
+    font-size: 1.7em;
+    margin: 0.3em 0;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.article-info .cat-data a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.article-info .cat-data a:hover {
+  opacity: 0.8;
+}
+
+.article-img {
+  max-width: 640px;
+  margin: 30px 0;
+  text-align: left;
+}
+
+/*Tag*/
+
+.article-tag {
+  text-align: right;
+  ul {
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+    color: #464646;
+  }
+
+  li a {
+    font-size: 0.8em;
+    margin-right: 7px;
+    padding: 2px 7px;
+    text-decoration: none;
+    color: #464646;
+    border: solid 1px #464646;
+    border-radius: 2px;
+  }
+
+  li a:hover {
+    opacity: 0.8;
+  }
+}
