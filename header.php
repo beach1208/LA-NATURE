@@ -15,14 +15,16 @@
 <div class="wrapper">
 
     <header id="header">
-        <div class="header-inner">
-        <div class="social-icons">
+    <div class="social-icons">
                 <ul>
                     <li>instagram</li>
                     <li>linkedin</li>
                     <li>dribble</li>
                 </ul>
             </div>
+
+        <div class="header-inner">
+       
 
 <div class="site-title">
                 <h1><a href="<?php echo home_url(); ?>">

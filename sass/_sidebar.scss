@@ -3,6 +3,7 @@
 .sidebar-wrapper {
   margin-bottom: 2rem;
   padding: 10px;
+  border: 1px solid #777;
 
   h4 {
     font-size: 1.1em;
@@ -10,7 +11,8 @@
     margin-bottom: 10px;
     padding: 7px 10px;
     color: #676767;
-    background-color: $main-pink;
+    background-color: $white;
+    text-align: center;
   }
 
   li {

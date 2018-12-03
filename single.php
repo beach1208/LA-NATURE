@@ -50,6 +50,8 @@
 <div class="article-tag">
     <?php the_tags('<ul><li>Tag: </li><li>', '</li><li>', '</li></ul>'); ?>
 </div>
+
+<?php get_template_part('sns'); ?>
 </article>
 
 
@@ -86,9 +88,9 @@
 
     
 </aside>
-
 <?php endif; ?>
-
+<!-- comments-form -->
+<?php comments_template(); ?>
     </div>
     <div class="col-md-4">
     <?php get_sidebar(); ?>

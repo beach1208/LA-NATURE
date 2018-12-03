@@ -31,10 +31,12 @@
         <?php $postcat = get_the_category();
         echo $postcat[0]->name; ?>
     </span>
-<?php endif; ?>
-<?php endif; ?>
 
+<?php endif; ?>
+<?php endif; ?>
 <?php the_excerpt(); ?>
+<a class="more-link" href="<?php the_permaLink(); ?>">Read More</a>
+
 </div>
 
         </a>
