@@ -11,6 +11,7 @@
         <?php if (has_post_thumbnail()) : ?>
         <?php the_post_thumbnail('medium'); ?>
         <?php else : ?>
+        
         <img src="<?php echo get_template_directory_uri(); ?>/img/no-image.gif" alt="no-img"/>
 <?php endif; ?>
 <div class="text">

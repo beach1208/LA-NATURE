@@ -50,6 +50,10 @@ header {
   border-bottom: solid 1px #ddd;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 /* size of contents */
 .header-inner,
 .main-container,

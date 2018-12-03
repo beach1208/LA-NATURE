@@ -12,6 +12,8 @@
 </head>
 <body <?php body_class(); ?>>
 
+<div class="wrapper">
+
     <header id="header">
         <div class="header-inner">
         <div class="social-icons">

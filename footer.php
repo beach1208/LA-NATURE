@@ -23,5 +23,7 @@
 </footer>
 
 <?php wp_footer(); ?><!--システム・プラグイン用-->
+
+</div>
 </body>
 </html>

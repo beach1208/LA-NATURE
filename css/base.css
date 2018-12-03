@@ -120,16 +120,10 @@ footer {
 }
 
 .article-list a {
-  display: block;
+  display: flex;
   padding: 20px;
   text-decoration: none;
   color: #000;
-}
-
-.article-list a:after {
-  display: block;
-  clear: both;
-  content: "";
 }
 
 .article-list a:hover {
@@ -137,15 +131,14 @@ footer {
 }
 
 .article-list img {
-  float: left;
-  width: 220px;
-  height: 150px;
+  width: 60%;
+  height: auto;
   object-fit: cover;
 }
 
 .article-list .text {
-  width: auto;
-  margin-left: 250px;
+  width: 58%;
+  margin-left: 2%;
 }
 
 .article-list .article-date {
@@ -162,6 +155,18 @@ footer {
   color: #fff;
   border-radius: 3px;
   background-color: #464646;
+}
+
+@media (max-width: 768px) {
+  .article-list img {
+    width: 100%;
+  }
+  .article-list a {
+    flex-direction: column;
+  }
+  .article-list .text {
+    width: 100%;
+  }
 }
 
 .article {
@@ -223,6 +228,72 @@ footer {
   opacity: 0.8;
 }
 
+.relate-article {
+  margin: 40px 0 0;
+  padding: 10px;
+}
+
+.relate-article h4 {
+  font-size: 1.25em;
+  padding: 3px 5px;
+  border-bottom: solid 1px #999;
+}
+
+.relate-article ul {
+  font-size: 0;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.relate-article li {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 25%;
+  padding: 10px 5px;
+  list-style: none;
+  vertical-align: top;
+}
+
+.relate-article li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+}
+
+.relate-article li a:hover {
+  color: #000070;
+  background-color: #eee;
+}
+
+.relate-article img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.relate-article .text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .relate-article ul {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .relate-article ul li {
+    width: 100%;
+  }
+  .relate-article ul text {
+    width: auto;
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+}
+
 body {
   /*body basic style*/
   font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
@@ -267,6 +338,10 @@ img {
 /*Horizontal line under header*/
 header {
   border-bottom: solid 1px #ddd;
+}
+
+.wrapper {
+  overflow: hidden;
 }
 
 /* size of contents */
