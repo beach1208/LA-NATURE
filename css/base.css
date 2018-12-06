@@ -12,23 +12,25 @@ footer .footer-nav-area ul {
 /*Horizontal line above footer*/
 footer {
   border-top: solid 1px #ddd;
-  background-color: #dec9d0;
+  background-color: #f9f4f1;
 }
 
 /*------side bar------*/
 .sidebar-wrapper {
   margin-bottom: 2rem;
   padding: 10px;
-  border: 1px solid #777;
 }
 
 .sidebar-wrapper h4 {
-  font-size: 1.1em;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-family: "Libre Baskerville, Baskerville, serif";
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 10px;
   padding: 7px 10px;
-  color: #676767;
-  background-color: #ffffff;
+  color: #58504d;
+  background-color: #f9f4f1;
   text-align: center;
 }
 
@@ -105,14 +107,10 @@ footer {
 
 .article-list {
   margin: 0 0 15px;
-  border: solid 1px #ddd;
   background-color: #ffffff;
   display: flex;
   position: relative;
-}
-
-.article-list:hover {
-  background: #fcf8fa;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .article-list h2 {
@@ -166,8 +164,8 @@ footer {
 }
 
 .article-list .more-link {
-  border: 1px solid #dec9d0;
-  padding: 10px;
+  padding: 5px;
+  text-align: center;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -320,7 +318,7 @@ footer {
   padding: 0;
 }
 
-.relate-article li {
+.relate-article ul li {
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -331,13 +329,13 @@ footer {
   vertical-align: top;
 }
 
-.relate-article li a {
+.relate-article ula {
   display: block;
   text-decoration: none;
   color: #000;
 }
 
-.relate-article li a:hover {
+.relate-article ula:hover {
   color: #000070;
   background-color: #eee;
 }
@@ -351,6 +349,28 @@ footer {
 .relate-article .text {
   font-size: 16px;
   font-weight: bold;
+}
+
+#respond label {
+  display: block;
+}
+
+#respond input,
+#respond textarea {
+  width: 100%;
+}
+
+#respond input[type="submit"] {
+  width: auto;
+}
+
+#respond .says {
+  display: none;
+}
+
+#respond .comment-autor,
+#respond .comment-meta {
+  display: inline-block;
 }
 
 @media (max-width: 767px) {
@@ -371,12 +391,11 @@ footer {
 
 body {
   /*body basic style*/
-  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: #444;
 }
 
 /* reset */
@@ -392,6 +411,7 @@ li,
 p {
   margin: 0;
   padding: 0;
+  font-family: none;
 }
 
 /*Title header font-style*/
@@ -410,18 +430,11 @@ img {
   height: auto;
 }
 
-/*Horizontal line under header*/
-header {
-  border-bottom: solid 1px #ddd;
-  margin-bottom: 50px;
-}
-
 .wrapper {
   overflow: hidden;
 }
 
 /* size of contents */
-.header-inner,
 .main-container,
 .footer-inner {
   max-width: 1200px;
@@ -431,15 +444,47 @@ header {
   box-sizing: border-box;
 }
 
+header {
+  margin-bottom: 40px;
+}
+
 .header-inner {
-  background: linear-gradient(rgba(255, 255, 255, 0.23), rgba(255, 255, 255, 0.86)), url(../../MyStyleBlog/img/header5.jpg) no-repeat center;
+  position: relative;
+  background: linear-gradient(rgba(255, 255, 255, 0.66), rgba(232, 232, 232, 0.66)), url(../../MyStyleBlog/img/header5.jpg) no-repeat center;
   background-size: cover;
-  height: 400px;
+  height: 450px;
+  margin-bottom: 40px;
+}
+
+/* Site title styles */
+.site-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.site-title h1 {
+  font-size: 2.8rem;
+  letter-spacing: 10px;
+  font-family: "Libre Baskerville, Baskerville, serif";
+  font-weight: 400;
+}
+
+.site-title a {
+  display: block;
+  text-decoration: none;
+  color: #58504d;
+}
+
+.site-title a:hover {
+  color: #58504d;
+  text-decoration: none;
 }
 
 /* Top sns nav bar */
 .social-icons {
-  background: #dec9d0;
+  background: #f9f4f1;
 }
 
 .social-icons ul {
@@ -461,29 +506,35 @@ header {
 
 /* List style */
 #menu-header-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-around;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 40px;
 }
 
 #menu-header-nav li {
   list-style: none;
+  padding: 10px 0;
 }
 
-/* Site title styles */
-.site-title {
-  text-align: left;
+#menu-header-nav li a {
+  color: #444;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-family: "Raleway";
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
-.site-title h1 {
-  font-size: 2.4em;
-  margin: 0;
-  padding: 10px 5px 0;
-}
-
-.site-title h1 a {
-  display: block;
+#menu-header-nav li a:hover {
   text-decoration: none;
-  color: #c29fb4;
+  color: #d2acbd;
 }
 
 .pagination {
@@ -536,9 +587,6 @@ header {
 /*------------------------*/
 @media (max-width: 768px) {
   /* nav bar button for responsive */
-  .header-inner {
-    position: relative;
-  }
   #navbutton {
     display: block;
     position: absolute;

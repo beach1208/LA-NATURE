@@ -2,14 +2,10 @@
 //articles styles
 .article-list {
   margin: 0 0 15px;
-  border: solid 1px #ddd;
   background-color: $white;
   display: flex;
   position: relative;
-
-  &:hover {
-    background: $hover-article;
-  }
+  border-bottom: 1px solid $sub-color;
 
   h2 {
     font-size: 1.05em;
@@ -62,8 +58,8 @@
   }
 
   .more-link {
-    border: 1px solid $main-pink;
-    padding: 10px;
+    padding: 5px;
+    text-align: center;
     position: absolute;
     bottom: 0;
     right: 0;

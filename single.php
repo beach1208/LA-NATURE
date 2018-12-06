@@ -16,7 +16,6 @@
 <!-- day of post -->
 
 <span class="article-date">
-<i class="fas fa-pencil-alt"></i>
     <time
     datetime="<?php echo get_the_date('Y-m-d'); ?>">
     <?php echo get_the_date(); ?>

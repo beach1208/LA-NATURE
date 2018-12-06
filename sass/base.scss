@@ -3,16 +3,17 @@
 @import "main-article";
 @import "single-article";
 @import "variable";
+@import "mixin";
 body {
   /*body basic style*/
-  font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro",
-    "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", Osaka, "ＭＳ Ｐゴシック",
-    "MS PGothic", sans-serif;
+  // font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro",
+  //   "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", Osaka, "ＭＳ Ｐゴシック",
+  //   "MS PGothic", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   margin: 0;
   padding: 0;
-  color: #333;
+  color: $body-font;
 }
 
 /* reset */
@@ -28,6 +29,7 @@ li,
 p {
   margin: 0;
   padding: 0;
+  font-family: none;
 }
 
 /*Title header font-style*/
@@ -45,40 +47,62 @@ img {
   height: auto;
 }
 
-/*Horizontal line under header*/
-header {
-  border-bottom: solid 1px #ddd;
-  margin-bottom: 50px;
-}
-
 .wrapper {
   overflow: hidden;
 }
 
 /* size of contents */
-.header-inner,
 .main-container,
 .footer-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include container-size;
 }
 
+//header styles
+header {
+  margin-bottom: 40px;
+}
 .header-inner {
+  position: relative;
   background: linear-gradient(
-      rgba(255, 255, 255, 0.23),
-      rgba(255, 255, 255, 0.86)
+      rgba(255, 255, 255, 0.66),
+      rgba(232, 232, 232, 0.66)
     ),
     url(../../MyStyleBlog/img/header5.jpg) no-repeat center;
   background-size: cover;
-  height: 400px;
+  height: 450px;
+  margin-bottom: 40px;
+}
+
+/* Site title styles */
+.site-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
+    @include font-style(
+      2.8rem,
+      10px,
+      "Libre Baskerville, Baskerville, serif",
+      400
+    );
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $main-title-color;
+
+    &:hover {
+      color: $main-title-color;
+      text-decoration: none;
+    }
+  }
 }
 
 /* Top sns nav bar */
 .social-icons {
-  background: $main-pink;
+  background: $main-color;
   ul {
     display: flex;
     justify-content: flex-end;
@@ -98,29 +122,28 @@ header {
 
 /* List style */
 #menu-header-nav {
+  @include container-size;
   display: flex;
   justify-content: space-around;
-}
+  border-top: 1px solid $sub-color;
+  border-bottom: 1px solid $sub-color;
+  margin-bottom: 40px;
 
-#menu-header-nav li {
-  list-style: none;
-}
+  li {
+    list-style: none;
+    padding: 10px 0;
 
-/* Site title styles */
-.site-title {
-  text-align: left;
-}
+    a {
+      color: $body-font;
+      @include font-style(1rem, 2px, "Raleway", 300);
+      text-transform: uppercase;
+    }
 
-.site-title h1 {
-  font-size: 2.4em;
-  margin: 0;
-  padding: 10px 5px 0;
-}
-
-.site-title h1 a {
-  display: block;
-  text-decoration: none;
-  color: #c29fb4;
+    a:hover {
+      text-decoration: none;
+      color: $tint-color;
+    }
+  }
 }
 
 // pagenation
@@ -176,9 +199,9 @@ header {
 
 @media (max-width: 768px) {
   /* nav bar button for responsive */
-  .header-inner {
-    position: relative;
-  }
+  // .header-inner {
+  //   position: relative;
+  // }
 
   #navbutton {
     display: block;

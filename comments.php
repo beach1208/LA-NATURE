@@ -5,8 +5,5 @@
 <ol class="comments-list">
     <?php wp_list_comments(); ?>
 </ol>
-<? php ?>
 <?php comment_form(); ?>
-
 </div>
-<? php ?>
