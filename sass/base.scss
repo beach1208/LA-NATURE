@@ -135,7 +135,7 @@ header {
 
     a {
       color: $main-title-color;
-      @include font-style(1rem, 2px, "Poppins", 200);
+      @include font-style(1rem, 1px, "Raleway", 300);
       text-transform: uppercase;
     }
 
