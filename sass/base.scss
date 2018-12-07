@@ -5,10 +5,6 @@
 @import "variable";
 @import "mixin";
 body {
-  /*body basic style*/
-  // font-family: "メイリオ", "Meiryo", "ヒラギノ角ゴ Pro",
-  //   "Hiragino Kaku Gothic Pro", "Noto Sans Japanese", Osaka, "ＭＳ Ｐゴシック",
-  //   "MS PGothic", sans-serif;
   font-size: 16px;
   line-height: 1.7;
   margin: 0;
@@ -135,7 +131,7 @@ header {
 
     a {
       color: $main-title-color;
-      @include font-style(1rem, 1px, "Raleway", 300);
+      @include font-style(1rem, 1px, "Poppins", 300);
       text-transform: uppercase;
     }
 

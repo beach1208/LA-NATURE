@@ -49,7 +49,7 @@
   opacity: 0.6;
 }
 
-/*カテゴリウィジェット*/
+/*Category Widget*/
 .widget_categories li {
   display: block;
   margin: 10px 50px;
@@ -63,4 +63,5 @@
 .widget_categories li a {
   @include font-style(0.8rem, 2px, "Poppins", 200);
   color: $body-font;
+  text-transform: uppercase;
 }

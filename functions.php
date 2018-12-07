@@ -30,13 +30,13 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 //Theme set up
 
-// titleタグをhead内に生成する
+// add title-tag inside head
 add_theme_support('title-tag');
-// HTML5でマークアップさせる
+// HTML5 markup 
 add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
-// Feedのリンクを自動で生成する
+// add feed links
 add_theme_support('automatic-feed-links');
-//アイキャッチ画像を使用する設定
+//add thumbnails image to each post
 add_theme_support('post-thumbnails');
 
 
