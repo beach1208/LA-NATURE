@@ -134,8 +134,8 @@ header {
     padding: 10px 0;
 
     a {
-      color: $body-font;
-      @include font-style(1rem, 2px, "Raleway", 300);
+      color: $main-title-color;
+      @include font-style(1rem, 2px, "Poppins", 200);
       text-transform: uppercase;
     }
 

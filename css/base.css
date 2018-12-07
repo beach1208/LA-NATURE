@@ -107,6 +107,7 @@ footer {
 
 .article-list {
   margin: 0 0 15px;
+  padding-bottom: 20px;
   background-color: #ffffff;
   display: flex;
   position: relative;
@@ -114,26 +115,35 @@ footer {
 }
 
 .article-list h2 {
-  font-size: 1.05em;
-  line-height: 1.4;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-family: "Libre Baskerville, Baskerville, serif";
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 5px;
 }
 
+.article-list h2:hover {
+  color: #d2acbd;
+}
+
 .article-list p {
-  font-size: 0.8em;
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: "Lora, serif";
+  font-weight: 400;
   margin: 10px 0 0;
 }
 
 .article-list a {
   padding: 20px;
   text-decoration: none;
-  color: #000;
+  color: #444;
 }
 
 .article-list a:hover {
+  color: #444;
   text-decoration: none;
-  color: #000;
 }
 
 .article-list img {
@@ -147,28 +157,33 @@ footer {
   margin-left: 2%;
 }
 
-.article-list .article-date {
-  font-size: 0.8em;
+.article-list .text .article-date {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-family: "Libre Baskerville, Baskerville, serif";
+  font-weight: 400;
   margin-bottom: 8px;
-  color: #666;
+  color: #444;
 }
 
-.article-list .cat-data {
-  font-size: 0.6em;
+.article-list .text .cat-data {
+  font-size: 0.7rem;
   padding: 3px 5px;
   text-align: center;
   white-space: nowrap;
   color: #ffffff;
-  border-radius: 3px;
-  background-color: #464646;
+  background-color: #c4ac92;
 }
 
-.article-list .more-link {
-  padding: 5px;
+.article-list .text .more-link {
+  padding: 5px 8px;
   text-align: center;
   position: absolute;
-  bottom: 0;
+  bottom: 20;
   right: 0;
+  border: 1px solid #d2d2d2;
+  background: #f9f4f1;
+  color: #7b7b7a;
 }
 
 @media (max-width: 768px) {
@@ -524,11 +539,11 @@ header {
 }
 
 #menu-header-nav li a {
-  color: #444;
+  color: #58504d;
   font-size: 1rem;
-  letter-spacing: 1px;
-  font-family: "Raleway";
-  font-weight: 300;
+  letter-spacing: 2px;
+  font-family: "Poppins";
+  font-weight: 200;
   text-transform: uppercase;
 }
 

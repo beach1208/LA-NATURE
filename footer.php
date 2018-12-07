@@ -5,13 +5,13 @@
     <div class="footer-nav-area">
 
 <!-- Add footer elements -->
-    <?php wp_nav_menu(array(
-      'theme_location' => 'footer-nav',
-      'container' => 'nav',
-      'container-class' => 'footer-nav',
-      'container-id' => 'footer-nav',
-      'fallback_cb' => ' '
-    )); ?>
+    <!-- <?php wp_nav_menu(array(
+          'theme_location' => 'footer-nav',
+          'container' => 'nav',
+          'container-class' => 'footer-nav',
+          'container-id' => 'footer-nav',
+          'fallback_cb' => ' '
+        )); ?> -->
 
     </div>
   	
