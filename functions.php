@@ -36,7 +36,7 @@ add_theme_support('title-tag');
 add_theme_support('html5', array('search-form', 'comment-form', 'comment-list', 'gallery', 'caption'));
 // add feed links
 add_theme_support('automatic-feed-links');
-//add thumbnails image to each post
+//add thumbnails image to each
 add_theme_support('post-thumbnails');
 
 

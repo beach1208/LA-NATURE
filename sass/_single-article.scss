@@ -168,13 +168,15 @@
 
 //comments form
 #respond {
+  background: $main-color;
+  padding: 30px;
   label {
     display: block;
   }
 
   input,
   textarea {
-    width: 100%;
+    width: 80%;
   }
 
   input[type="submit"] {

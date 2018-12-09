@@ -16,7 +16,6 @@ footer {
 
 /*------side bar------*/
 .sidebar-wrapper {
-  margin-bottom: 2rem;
   padding: 10px;
 }
 
@@ -26,7 +25,7 @@ footer {
   font-family: "Libre Baskerville, Baskerville, serif";
   font-weight: 400;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding: 7px 10px;
   color: #58504d;
   background-color: #f9f4f1;
@@ -78,6 +77,38 @@ footer {
   font-weight: 200;
   color: #444;
   text-transform: uppercase;
+}
+
+.searchform {
+  position: relative;
+}
+
+.searchfield {
+  font-size: 14px;
+  width: 80%;
+  margin: 10px 30px;
+  padding: 10px;
+  border: solid 1px #d2d2d2;
+  /* border-radius: 4px; */
+  background-color: #f5f5f5;
+}
+
+.searchsubmit {
+  font-family: FontAwesome;
+  font-size: 1.4em;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  margin-top: 15px;
+  padding: 0;
+  cursor: pointer;
+  color: #c9aa8e;
+  border: none;
+  background: transparent;
+}
+
+.searchsubmit:hover {
+  opacity: 0.6;
 }
 
 .article-list {
@@ -341,13 +372,18 @@ footer {
   font-weight: bold;
 }
 
+#respond {
+  background: #f9f4f1;
+  padding: 30px;
+}
+
 #respond label {
   display: block;
 }
 
 #respond input,
 #respond textarea {
-  width: 100%;
+  width: 80%;
 }
 
 #respond input[type="submit"] {
