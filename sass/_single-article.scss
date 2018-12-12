@@ -5,7 +5,7 @@
   padding: 0 25px 25px;
 
   h1 {
-    font-size: 1.7em;
+    font-size: $article-title-font-size;
     margin: 0.3em 0;
   }
 
@@ -85,7 +85,7 @@
 }
 
 .share li a {
-  font-size: 14px;
+  font-size: $base-font-size;
   display: block;
   padding: 10px;
   text-align: center;
@@ -125,7 +125,7 @@
   padding: 10px;
 
   h4 {
-    font-size: 1.25em;
+    font-size: $article-title-font-size;
     padding: 3px 5px;
     border-bottom: solid 1px #999;
   }
@@ -172,11 +172,28 @@
   padding: 30px;
   label {
     display: block;
+    @include font-style($base-font-size, 0, $body-font, 400);
+    color: $body-font;
+  }
+  #reply-title {
+    @include font-style($article-title-font-size, 1px, $main-font, 400);
+  }
+
+  .logged-in-as a {
+    color: $tint-color;
   }
 
   input,
   textarea {
     width: 80%;
+  }
+  textarea {
+    padding: 0 25px 25px;
+    background: #fff;
+    border: 0;
+    border-radius: 10px;
+    @include font-style($base-font-size, 0, $body-font, 400);
+    color: $body-font;
   }
 
   input[type="submit"] {

@@ -11,7 +11,7 @@
 
   h2 {
     @include font-style(
-      1.3rem,
+      $article-title-font-size,
       1px,
       "Libre Baskerville, Baskerville, serif",
       400
@@ -24,7 +24,7 @@
   }
 
   p {
-    @include font-style(1rem, 0, "Lora, serif", 400);
+    @include font-style($base-font-size, 0, "Lora, serif", 400);
     margin: 10px 0 0;
   }
 
@@ -50,7 +50,7 @@
 
     .article-date {
       @include font-style(
-        1rem,
+        $base-font-size,
         1px,
         "Libre Baskerville, Baskerville, serif",
         400

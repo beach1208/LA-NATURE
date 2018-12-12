@@ -76,12 +76,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   h1 {
-    @include font-style(
-      2.8rem,
-      10px,
-      "Libre Baskerville, Baskerville, serif",
-      400
-    );
+    @include font-style($title-font-size, 10px, $main-font, 400);
   }
 
   a {
@@ -131,7 +126,7 @@ header {
 
     a {
       color: $main-title-color;
-      @include font-style(1rem, 1px, "Poppins", 300);
+      @include font-style($base-font-size, 1px, $sub-font, 300);
       text-transform: uppercase;
     }
 
@@ -195,9 +190,6 @@ header {
 
 @media (max-width: 768px) {
   /* nav bar button for responsive */
-  // .header-inner {
-  //   position: relative;
-  // }
 
   #navbutton {
     display: block;

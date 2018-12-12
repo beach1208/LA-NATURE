@@ -6,7 +6,7 @@
 
   h4 {
     @include font-style(
-      1.2rem,
+      $sidebar-font-size,
       1px,
       "Libre Baskerville, Baskerville, serif",
       400
@@ -82,7 +82,7 @@
 
 .searchsubmit {
   font-family: FontAwesome;
-  font-size: 1.4em;
+  font-size: $sidebar-font-size;
   position: absolute;
   top: 0;
   right: 15%;

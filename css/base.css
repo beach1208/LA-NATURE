@@ -95,7 +95,7 @@ footer {
 
 .searchsubmit {
   font-family: FontAwesome;
-  font-size: 1.4em;
+  font-size: 1.2rem;
   position: absolute;
   top: 0;
   right: 15%;
@@ -121,7 +121,7 @@ footer {
 }
 
 .article-list h2 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   letter-spacing: 1px;
   font-family: "Libre Baskerville, Baskerville, serif";
   font-weight: 400;
@@ -130,7 +130,7 @@ footer {
 }
 
 .article-list h2:hover {
-  color: #d2acbd;
+  color: #ce849a;
 }
 
 .article-list p {
@@ -211,7 +211,7 @@ footer {
 }
 
 .article h1 {
-  font-size: 1.7em;
+  font-size: 1.4rem;
   margin: 0.3em 0;
 }
 
@@ -288,7 +288,7 @@ footer {
 }
 
 .share li a {
-  font-size: 14px;
+  font-size: 1rem;
   display: block;
   padding: 10px;
   text-align: center;
@@ -328,7 +328,7 @@ footer {
 }
 
 .relate-article h4 {
-  font-size: 1.25em;
+  font-size: 1.4rem;
   padding: 3px 5px;
   border-bottom: solid 1px #999;
 }
@@ -381,9 +381,30 @@ footer {
   display: block;
 }
 
+#respond #reply-title {
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-family: "Libre Baskerville, Baskerville, serif";
+  font-weight: 400;
+}
+
+#respond .logged-in-as a {
+  color: #ce849a;
+}
+
 #respond input,
 #respond textarea {
   width: 80%;
+}
+
+#respond textarea {
+  padding: 0 25px 25px;
+  background: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.3em;
+  font-family: Arial, sans-serif;
+  color: #444;
 }
 
 #respond input[type="submit"] {
@@ -559,7 +580,7 @@ header {
 
 #menu-header-nav li a:hover {
   text-decoration: none;
-  color: #d2acbd;
+  color: #ce849a;
 }
 
 .pagination {
