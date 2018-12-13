@@ -166,28 +166,28 @@ header {
   margin: 0 1px;
   padding: 5px 0;
   text-decoration: none;
-  color: #000;
-  border: solid 1px #ccc;
+  color: $tint-color;
+  border: solid 1px $tint-color;
   border-radius: 3px;
 }
 
 .pagination li > span {
-  color: #fff;
-  background-color: #464646;
+  color: $white;
+  background-color: $tint-color;
 }
 
 .pagination li a:hover {
-  color: #fff;
-  background-color: #464646;
+  color: $white;
+  background-color: $tint-color;
 }
 
-.pagination li .dots {
-  width: 15px;
-  padding: 0;
-  color: #000;
-  border-color: transparent;
-  background-color: transparent;
-}
+// .pagination li .dots {
+//   width: 15px;
+//   padding: 0;
+//   color: #000;
+//   border-color: transparent;
+//   background-color: transparent;
+// }
 
 /*------------------------*/
 
