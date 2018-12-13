@@ -206,16 +206,23 @@ footer {
 
 .article {
   font-size: 1rem;
-  margin: 0;
-  padding: 0 25px 25px;
+  padding: 25px;
 }
 
-.article h1 {
+.article h1,
+.article h4 {
   font-size: 1.4rem;
-  margin: 0.3em 0;
+  letter-spacing: 1px;
+  font-family: "Libre Baskerville, Baskerville, serif";
+  font-weight: 400;
+  font-size: 1.4rem;
 }
 
 .article p {
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: "Lora, serif";
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -306,13 +313,16 @@ footer {
 
 .relate-article {
   margin: 40px 0 0;
-  padding: 10px;
+  padding: 25px;
 }
 
 .relate-article h4 {
   font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-family: "Libre Baskerville, Baskerville, serif";
+  font-weight: 400;
   padding: 3px 5px;
-  border-bottom: solid 1px #999;
+  border-bottom: solid 1px #eaeaea;
 }
 
 .relate-article ul {
@@ -332,15 +342,10 @@ footer {
   vertical-align: top;
 }
 
-.relate-article ula {
+.relate-article ul a {
   display: block;
   text-decoration: none;
-  color: #000;
-}
-
-.relate-article ula:hover {
-  color: #000070;
-  background-color: #eee;
+  color: #444;
 }
 
 .relate-article img {
@@ -350,8 +355,16 @@ footer {
 }
 
 .relate-article .text {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 1rem;
+  color: #444;
+}
+
+.relate-article .text:hover {
+  color: #bb8696;
+}
+
+.comments {
+  padding: 25px;
 }
 
 .comments-list {
@@ -398,7 +411,6 @@ footer {
   padding: 0 25px 25px;
   background: #fff;
   border: 0;
-  border-radius: 10px;
   font-size: 1rem;
   letter-spacing: 0;
   font-family: #444;

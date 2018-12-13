@@ -10,12 +10,7 @@
   border-bottom: 1px solid $sub-color;
 
   h2 {
-    @include font-style(
-      $article-title-font-size,
-      1px,
-      "Libre Baskerville, Baskerville, serif",
-      400
-    );
+    @include font-style($article-title-font-size, 1px, $main-font, 400);
     margin-top: 0;
     margin-bottom: 5px;
     &:hover {
@@ -24,7 +19,7 @@
   }
 
   p {
-    @include font-style($base-font-size, 0, "Lora, serif", 400);
+    @include font-style($base-font-size, 0, $article-body, 400);
     margin: 10px 0 0;
   }
 

@@ -1,15 +1,16 @@
 @import "variable";
 .article {
   font-size: 1rem;
-  margin: 0;
-  padding: 0 25px 25px;
+  padding: 25px;
 
-  h1 {
+  h1,
+  h4 {
+    @include font-style($article-title-font-size, 1px, $main-font, 400);
     font-size: $article-title-font-size;
-    margin: 0.3em 0;
   }
 
   p {
+    @include font-style($base-font-size, 0, $article-body, 400);
     margin-top: 0;
     margin-bottom: 30px;
   }
@@ -108,13 +109,12 @@
 
 // related article
 .relate-article {
-  margin: 40px 0 0;
-  padding: 10px;
+  padding: 25px;
 
   h4 {
-    font-size: $article-title-font-size;
+    @include font-style($article-title-font-size, 1px, $main-font, 400);
     padding: 3px 5px;
-    border-bottom: solid 1px #999;
+    border-bottom: solid 1px $sub-color;
   }
   ul {
     font-size: 0;
@@ -131,14 +131,10 @@
       list-style: none;
       vertical-align: top;
     }
-    &a {
+    a {
       display: block;
       text-decoration: none;
-      color: #000;
-    }
-    &a:hover {
-      color: #000070;
-      background-color: #eee;
+      color: $body-font;
     }
   }
 
@@ -148,11 +144,19 @@
     object-fit: cover;
   }
   .text {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: $base-font-size;
+    color: $body-font;
+
+    &:hover {
+      color: $tint-color;
+    }
   }
 }
 
+//comments div
+.comments {
+  padding: 25px;
+}
 //comment list
 .comments-list {
   padding: 0;
@@ -190,7 +194,6 @@
     padding: 0 25px 25px;
     background: #fff;
     border: 0;
-    border-radius: 10px;
     @include font-style($base-font-size, 0, $body-font, 400);
     color: $body-font;
   }
