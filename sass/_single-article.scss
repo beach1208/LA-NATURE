@@ -63,61 +63,48 @@
 .share {
   margin-top: 40px;
   margin-bottom: 40px;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  li {
+    margin-top: 15px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+
+    .fa {
+      font-size: $sidebar-font-size;
+    }
+
+    a {
+      font-size: $base-font-size;
+      display: block;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      background: $white;
+      color: $tint-color;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+
+    a:visited {
+      color: #fff;
+    }
+  }
 }
 
-.share ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.share ul:after {
-  display: block;
-  clear: both;
-  content: "";
-}
-
-.share li {
-  float: left;
-  width: 25%;
-  margin: 0;
-  margin-top: 15px;
-}
-
-.share li a {
-  font-size: $base-font-size;
-  display: block;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-}
-
-.share li a:hover {
-  opacity: 0.8;
-}
-
-.share li a:visited {
-  color: #fff;
-}
-
-.tweet a {
-  background-color: #55acee;
-}
-
-.facebook a {
-  background-color: #315096;
-}
-
-.fa-hatena:before {
-  font-family: Verdana;
-  font-weight: bold;
-  content: "B!";
-}
-
-.hatena a {
-  background-color: #008fde;
-}
+// .fa-hatena:before {
+//   font-family: Verdana;
+//   font-weight: bold;
+//   content: "B!";
+// }
 
 // related article
 .relate-article {
@@ -166,21 +153,33 @@
   }
 }
 
+//comment list
+.comments-list {
+  padding: 0;
+}
+//comment area
+
+.comment-body {
+  .comment-metadata a,
+  .reply a {
+    color: $tint-color;
+  }
+}
+
 //comments form
-#respond {
+.comment-respond {
   background: $main-color;
-  padding: 30px;
+  margin-bottom: 70px;
+  padding: 40px;
+  @include font-style($base-font-size, 0, $sub-font, 400);
+
   label {
     display: block;
-    @include font-style($base-font-size, 0, $body-font, 400);
+    @include font-style($base-font-size, 0, $sub-font, 400);
     color: $body-font;
   }
   #reply-title {
     @include font-style($article-title-font-size, 1px, $main-font, 400);
-  }
-
-  .logged-in-as a {
-    color: $tint-color;
   }
 
   input,
@@ -197,12 +196,16 @@
   }
 
   input[type="submit"] {
+    @include font-style($base-font-size, 0, $sub-font, 400);
     width: auto;
+    padding: 10px 20px;
+    background: $tint-color;
+    color: $white;
   }
 
-  .says {
-    display: none;
-  }
+  // .says {
+  //   display: none;
+  // }
 
   .comment-autor,
   .comment-meta {

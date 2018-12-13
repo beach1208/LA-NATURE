@@ -130,7 +130,7 @@ footer {
 }
 
 .article-list h2:hover {
-  color: #ce849a;
+  color: #bb8696;
 }
 
 .article-list p {
@@ -272,19 +272,18 @@ footer {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.share ul:after {
-  display: block;
-  clear: both;
-  content: "";
+  display: flex;
+  justify-content: flex-start;
 }
 
 .share li {
-  float: left;
-  width: 25%;
-  margin: 0;
   margin-top: 15px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+}
+
+.share li .fa {
+  font-size: 1.2rem;
 }
 
 .share li a {
@@ -293,7 +292,8 @@ footer {
   padding: 10px;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  background: #ffffff;
+  color: #bb8696;
 }
 
 .share li a:hover {
@@ -302,24 +302,6 @@ footer {
 
 .share li a:visited {
   color: #fff;
-}
-
-.tweet a {
-  background-color: #55acee;
-}
-
-.facebook a {
-  background-color: #315096;
-}
-
-.fa-hatena:before {
-  font-family: Verdana;
-  font-weight: bold;
-  content: "B!";
-}
-
-.hatena a {
-  background-color: #008fde;
 }
 
 .relate-article {
@@ -372,51 +354,71 @@ footer {
   font-weight: bold;
 }
 
-#respond {
+.comments-list {
+  padding: 0;
+}
+
+.comment-body .comment-metadata a,
+.comment-body .reply a {
+  color: #bb8696;
+}
+
+.comment-respond {
   background: #f9f4f1;
-  padding: 30px;
+  margin-bottom: 70px;
+  padding: 40px;
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: "Poppins";
+  font-weight: 400;
 }
 
-#respond label {
+.comment-respond label {
   display: block;
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #444;
 }
 
-#respond #reply-title {
+.comment-respond #reply-title {
   font-size: 1.4rem;
   letter-spacing: 1px;
   font-family: "Libre Baskerville, Baskerville, serif";
   font-weight: 400;
 }
 
-#respond .logged-in-as a {
-  color: #ce849a;
-}
-
-#respond input,
-#respond textarea {
+.comment-respond input,
+.comment-respond textarea {
   width: 80%;
 }
 
-#respond textarea {
+.comment-respond textarea {
   padding: 0 25px 25px;
   background: #fff;
   border: 0;
   border-radius: 10px;
-  font-size: 1.3em;
-  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: #444;
+  font-weight: 400;
   color: #444;
 }
 
-#respond input[type="submit"] {
+.comment-respond input[type="submit"] {
+  font-size: 1rem;
+  letter-spacing: 0;
+  font-family: "Poppins";
+  font-weight: 400;
   width: auto;
+  padding: 10px 20px;
+  background: #bb8696;
+  color: #ffffff;
 }
 
-#respond .says {
-  display: none;
-}
-
-#respond .comment-autor,
-#respond .comment-meta {
+.comment-respond .comment-autor,
+.comment-respond .comment-meta {
   display: inline-block;
 }
 
@@ -580,7 +582,7 @@ header {
 
 #menu-header-nav li a:hover {
   text-decoration: none;
-  color: #ce849a;
+  color: #bb8696;
 }
 
 .pagination {
