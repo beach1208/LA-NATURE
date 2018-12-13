@@ -312,7 +312,6 @@ footer {
 }
 
 .relate-article {
-  margin: 40px 0 0;
   padding: 25px;
 }
 
@@ -556,7 +555,11 @@ header {
 
 .social-icons li {
   list-style: none;
-  margin-right: 10px;
+  padding: 10px;
+}
+
+.social-icons a {
+  color: #bb8696;
 }
 
 /* nav button */

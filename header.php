@@ -15,10 +15,30 @@
     <header id="header">
     <div class="social-icons">
                 <ul>
-                    <li>instagram</li>
-                    <li>linkedin</li>
-                    <li>dribble</li>
-                </ul>
+    <li class="facebook">
+      <a href="#">
+      <i class="fab fa-facebook-f"></i>
+      </a>
+    </li>
+
+    <li class="tweet">
+      <a href="#">
+      <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+
+    <li class="instagram">
+      <a href="#">
+      <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+
+    <li class="pinterest">
+      <a href="#">
+      <i class="fab fa-pinterest"></i>
+      </a>
+    </li>
+</ul>
             </div>
 
         <div class="header-inner">
