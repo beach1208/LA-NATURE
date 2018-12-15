@@ -24,7 +24,7 @@ My design steps.
 
 ### 2. Set the goal - What's the goal?
 
-- Make a blog theme which catch eyes of bloggers and readers.
+- Make a blog theme which catches eyes of bloggers and readers.
 - Make a theme which bloggers can show their pictures beautifully.
 
 ### 3. Wireframing
