@@ -14,7 +14,11 @@
 
     <header id="header">
     <div class="social-icons">
-                <ul>
+    <ul>
+       <li class="home">
+      <a href="<?php bloginfo('url'); ?>">Home</a>
+    </li>
+
     <li class="facebook">
       <a href="#">
       <i class="fab fa-facebook-f"></i>

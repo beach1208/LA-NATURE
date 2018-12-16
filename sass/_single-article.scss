@@ -198,12 +198,17 @@
     color: $body-font;
   }
 
+  input#email,input#author {
+    border: 0;
+  }
+
   input[type="submit"] {
     @include font-style($base-font-size, 0, $sub-font, 400);
     width: auto;
     padding: 10px 20px;
     background: $tint-color;
     color: $white;
+    border: 0;
   }
 
   // .says {

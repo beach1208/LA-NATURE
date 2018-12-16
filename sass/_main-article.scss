@@ -9,6 +9,11 @@
   position: relative;
   border-bottom: 1px solid $sub-color;
 
+  @include max-screen($breakpMobileLand-min-768){
+    flex-direction: column;
+  }
+
+
   h2 {
     @include font-style($article-title-font-size, 1px, $main-font, 400);
     margin-top: 0;
@@ -42,6 +47,11 @@
   .text {
     width: 58%;
     margin-left: 2%;
+    @include max-screen($breakpMobileLand-min-768){
+    width: 100%;
+    padding: 20px;
+  }
+
 
     .article-date {
       @include font-style(
@@ -69,21 +79,9 @@
       text-transform: uppercase;
       position: absolute;
       bottom: 20;
-      right: 0;
+      right: 20;
       color: $tint-color;
       font-family: $sub-font;
-    }
-  }
-
-  @media (max-width: 768px) {
-    .article-list {
-      flex-direction: column;
-      img {
-        width: 100%;
-      }
-      .text {
-        width: 100%;
-      }
     }
   }
 }
