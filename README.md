@@ -9,6 +9,7 @@ LA NATURE is a original Wordpress blog theme that I designed and developed.
 
 - HTML5
 - CSS3/SCSS
+- PHP
 - JavaScript
 - Gulp
 - Wordpress
