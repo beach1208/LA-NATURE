@@ -13,12 +13,22 @@
 <div class="wrapper">
 
     <header id="header">
+
+  
     <div class="social-icons">
+      
     <ul>
        <li class="home">
       <a href="<?php bloginfo('url'); ?>">Home</a>
     </li>
 
+    <?php wp_nav_menu(array(
+    'theme_location' => 'header-top-nav',
+    'container' => 'nav',
+    'container-class' => 'header-top-nav',
+    'container-id' => 'header-top-nav',
+    'fallback_cb' => ' '
+)); ?>
     <li class="facebook">
       <a href="#">
       <i class="fab fa-facebook-f"></i>

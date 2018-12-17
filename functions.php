@@ -43,6 +43,7 @@ add_theme_support('post-thumbnails');
 
 
 // Verify header and footer navigation bar 
+register_nav_menu('header-top-nav', 'header-top-navigation');
 register_nav_menu('header-nav', 'header-navigation');
 register_nav_menu('footer-nav', 'footer-navigation');
 
@@ -59,17 +60,6 @@ function widgetarea_init()
     ));
 }
 add_action('widgets_init', 'widgetarea_init');
-    
-//comment form custom
-// function custom_comment_form($args)
-// {
-//     $args['author'] = 'Name';
-//     $args['comment_notes_before'] = '';
-//     $args['comment_notes_after'] = '';
-//     $args['label_submit'] = 'Submit';
-//     return $args;
-// }
-// add_filter('comment_form_defaults', 'custom_comment_form');
 
 // remove login as
 add_filter('comment_form_logged_in', '__return_empty_string');
