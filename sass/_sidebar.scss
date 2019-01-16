@@ -29,6 +29,11 @@
     text-decoration: none;
     color: #333;
   }
+
+  a:hover {
+    text-decoration: none;
+    color: $tint-color;
+  }
 }
 
 .widget_recent_entries li,

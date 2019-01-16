@@ -43,6 +43,11 @@ footer {
   color: #333;
 }
 
+.sidebar-wrapper a:hover {
+  text-decoration: none;
+  color: #bb8696;
+}
+
 .widget_recent_entries li,
 .widget_nav_menu li {
   padding-left: 25px;
@@ -584,9 +589,43 @@ header {
   color: #bb8696;
 }
 
-/* nav button */
+.social-icons a:hover {
+  color: #58504d;
+}
+
+/*Menu button*/
+.header-inner {
+  position: relative;
+}
+
+#navbutton {
+  position: absolute;
+  left: 10px;
+  margin-top: 30px;
+  padding: 8px 12px;
+  cursor: pointer;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  border: solid 1px #fff;
+  background-color: #fff;
+}
+
+#navbutton:focus {
+  outline: none;
+}
+
+#navbutton i {
+  font-size: 2em;
+  color: #bb8696;
+}
+
+.header-inner-button {
+  display: flex;
+  justify-content: space-around;
+}
+
 /* List style */
-.menu-header-nav-container {
+#menu-header-nav {
   max-width: 1200px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
@@ -597,12 +636,12 @@ header {
   margin-bottom: 40px;
 }
 
-.menu-header-nav-container li {
+#menu-header-nav li {
   list-style: none;
   padding: 20px 40px;
 }
 
-.menu-header-nav-container li a {
+#menu-header-nav li a {
   color: #58504d;
   font-size: 1rem;
   letter-spacing: 1px;
@@ -611,7 +650,7 @@ header {
   text-transform: uppercase;
 }
 
-.menu-header-nav-container li a:hover {
+#menu-header-nav li a:hover {
   text-decoration: none;
   color: #bb8696;
 }

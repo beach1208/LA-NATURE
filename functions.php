@@ -7,8 +7,6 @@ function my_styles()
     wp_enqueue_style('google_fonts', "https://fonts.googleapis.com/css?family=Libre+Baskerville|Lora|Poppins:200,400|Raleway");
     wp_enqueue_style('fontawesome', "https://use.fontawesome.com/releases/v5.0.13/css/all.css");
     wp_enqueue_style('bootstrap_css', "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css");
-    wp_enqueue_style('bootstrap_js', "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js");
-    wp_enqueue_style('jquery', "https://code.jquery.com/jquery-3.3.1.slim.min.js");
      
 }
 add_action('wp_enqueue_scripts', 'my_styles');

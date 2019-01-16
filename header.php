@@ -62,30 +62,27 @@
                 <?php bloginfo('name'); ?>
             </a></h1>
             </div>  
-            <!-- mobile button -->
-<!-- <button type="button" id="navbutton">
- <i class="fas fa-list-ul"></i>
-</button> -->
 
 </div>
  <!--Header Menu  -->
-
- <nav class="navbar navbar-expand-lg navbar-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+ <!-- mobile button -->
+ <div class="header-inner-button">
+<button type="button" id="navbutton">
+ <i class="fas fa-bars"></i>
+</button>
 <?php wp_nav_menu(array(
     'theme_location' => 'header-nav',
     'container' => 'nav',
-    'menu_class' => 'nav navbar-nav',
+    'menu_class' => 'nav',
     'container-id' => 'header-nav',
     'fallback_cb' => ' ',
-    'walker'      => new WP_Bootstrap_Navwalker(),
 )); ?>
-  </div>
-</nav>
-
-
+ </div>
  
 </header>
+
+
+<!-- TODO -->
+<!-- Top SNS button hover color change
+Subdomain get and publish the website
+Header menu responsive -->

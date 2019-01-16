@@ -28,6 +28,8 @@ p {
   font-family: none;
 }
 
+
+
 /*Title header font-style*/
 h1,
 h2,
@@ -37,6 +39,7 @@ h5,
 h6 {
   font-weight: bold;
 }
+
 /*Set max size of img*/
 img {
   max-width: 100%;
@@ -111,18 +114,47 @@ header {
   a {
     color: $tint-color;
   }
+
+  a:hover {
+      color: $main-title-color;
+    }
 }
 
-/* nav button */
-// #navbutton {
-//   display: none;
-// }
+/*Menu button*/
+  .header-inner {
+    position: relative;
+  }
+ 
+  #navbutton {
+    position: absolute;
+    left: 10px;
+    margin-top: 30px;
+    padding: 8px 12px;
+    cursor: pointer;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border: solid 1px #fff;
+    background-color: #fff;
+  }
+
+ 
+  #navbutton:focus {
+    outline: none;
+  }
+ 
+  #navbutton i {
+    font-size: 2em;
+    color: $tint-color;
+  }
+
+.header-inner-button {
+  display: flex;
+  justify-content: space-around;
+}
 
 /* List style */
-.menu-header-nav-container {
+#menu-header-nav {
   @include container-size;
-  // display: flex;
-  // justify-content: space-around;
   border-top: 1px solid $sub-color;
   border-bottom: 1px solid $sub-color;
   margin-bottom: 40px;
