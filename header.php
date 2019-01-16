@@ -28,29 +28,7 @@
     'container-id' => 'header-top-nav',
     'fallback_cb' => ' '
 )); ?>
-    <li class="facebook">
-      <a href="#">
-      <i class="fab fa-facebook-f"></i>
-      </a>
-    </li>
-
-    <li class="tweet">
-      <a href="#">
-      <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-
-    <li class="instagram">
-      <a href="#">
-      <i class="fab fa-instagram"></i>
-      </a>
-    </li>
-
-    <li class="pinterest">
-      <a href="#">
-      <i class="fab fa-pinterest"></i>
-      </a>
-    </li>
+   
 </ul>
             </div>
 
@@ -80,9 +58,3 @@
  </div>
  
 </header>
-
-
-<!-- TODO -->
-<!-- Top SNS button hover color change
-Subdomain get and publish the website
-Header menu responsive -->

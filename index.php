@@ -37,11 +37,10 @@
 <a class="more-link" href="<?php the_permaLink(); ?>">Read More</a>
 
 </div>
+</a>
+</article>
 
-        </a>
-        </article>
-
-        <!-- end of loop -->
+<!-- end of loop -->
 <?php endwhile;
 endif; ?>
 

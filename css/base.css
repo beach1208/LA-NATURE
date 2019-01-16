@@ -1,17 +1,11 @@
-footer p {
-  margin: 0;
-}
-
-footer .footer-nav-area ul {
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-}
-
-/*Horizontal line above footer*/
 footer {
   border-top: solid 1px #ddd;
   background-color: #f9f4f1;
+}
+
+footer p {
+  margin: 0;
+  text-align: center;
 }
 
 /*------side bar------*/
@@ -599,9 +593,10 @@ header {
 }
 
 #navbutton {
+  display: none;
   position: absolute;
   left: 10px;
-  margin-top: 30px;
+  margin-top: 20px;
   padding: 8px 12px;
   cursor: pointer;
   -webkit-transform: translateY(-50%);
@@ -631,6 +626,7 @@ header {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  display: flex;
   border-top: 1px solid #eaeaea;
   border-bottom: 1px solid #eaeaea;
   margin-bottom: 40px;
@@ -695,6 +691,11 @@ header {
 }
 
 /*------------------------*/
-@media (max-width: 768px) {
-  /* nav bar button for responsive */
+@media (max-width: 767px) {
+  #navbutton {
+    display: block;
+  }
+  #menu-header-nav {
+    display: none;
+  }
 }

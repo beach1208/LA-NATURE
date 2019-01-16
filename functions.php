@@ -11,6 +11,12 @@ function my_styles()
 }
 add_action('wp_enqueue_scripts', 'my_styles');
 
+function my_js(){
+  wp_enqueue_script('jqueryMobile_js', 'https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js', array('jquery'), '', true);
+  wp_enqueue_script('main_js', get_template_directory_uri() . '/script.js', array('jquery'), '', true);
+}
+
+add_action('wp_enqueue_scripts', 'my_js');
 
 //Read more functions
 function new_excerpt_mblength($length)
@@ -67,5 +73,3 @@ add_action('widgets_init', 'widgetarea_init');
 
 // remove login as
 add_filter('comment_form_logged_in', '__return_empty_string');
-
- require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
