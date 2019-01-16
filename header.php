@@ -13,7 +13,6 @@
 <div class="wrapper">
 
     <header id="header">
-
   
     <div class="social-icons">
       
@@ -62,21 +61,31 @@
                 <h1><a href="<?php echo home_url(); ?>">
                 <?php bloginfo('name'); ?>
             </a></h1>
-            </div>
-            
-     
-            <!--mobile button-->
-<button type="button" id="navbutton">
+            </div>  
+            <!-- mobile button -->
+<!-- <button type="button" id="navbutton">
  <i class="fas fa-list-ul"></i>
-</button>
+</button> -->
 
 </div>
  <!--Header Menu  -->
- <?php wp_nav_menu(array(
+
+ <nav class="navbar navbar-expand-lg navbar-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+<?php wp_nav_menu(array(
     'theme_location' => 'header-nav',
     'container' => 'nav',
-    'container-class' => 'header-nav',
+    'menu_class' => 'nav navbar-nav',
     'container-id' => 'header-nav',
-    'fallback_cb' => ' '
+    'fallback_cb' => ' ',
+    'walker'      => new WP_Bootstrap_Navwalker(),
 )); ?>
+  </div>
+</nav>
+
+
+ 
 </header>

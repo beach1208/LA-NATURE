@@ -114,22 +114,22 @@ header {
 }
 
 /* nav button */
-#navbutton {
-  display: none;
-}
+// #navbutton {
+//   display: none;
+// }
 
 /* List style */
-#menu-header-nav {
+.menu-header-nav-container {
   @include container-size;
-  display: flex;
-  justify-content: space-around;
+  // display: flex;
+  // justify-content: space-around;
   border-top: 1px solid $sub-color;
   border-bottom: 1px solid $sub-color;
   margin-bottom: 40px;
 
   li {
     list-style: none;
-    padding: 10px 0;
+    padding: 20px 40px;
 
     a {
       color: $main-title-color;
@@ -191,30 +191,30 @@ header {
 @media (max-width: 768px) {
   /* nav bar button for responsive */
 
-  #navbutton {
-    display: block;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    padding: 8px 12px;
-    cursor: pointer;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    border: solid 1px #aaa;
-    border-radius: 5px;
-    background-color: #fff;
-  }
+  // #navbutton {
+  //   display: block;
+  //   position: absolute;
+  //   top: 50%;
+  //   right: 10px;
+  //   padding: 8px 12px;
+  //   cursor: pointer;
+  //   -webkit-transform: translateY(-50%);
+  //   transform: translateY(-50%);
+  //   border: solid 1px #aaa;
+  //   border-radius: 5px;
+  //   background-color: #fff;
+  // }
 
-  #navbutton:hover {
-    background-color: #ddd;
-  }
+  // #navbutton:hover {
+  //   background-color: #ddd;
+  // }
 
-  #navbutton:focus {
-    outline: none;
-  }
+  // #navbutton:focus {
+  //   outline: none;
+  // }
 
-  #navbutton i {
-    font-size: 2em;
-    color: #333;
-  }
+  // #navbutton i {
+  //   font-size: 2em;
+  //   color: #333;
+  // }
 }
