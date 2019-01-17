@@ -2,7 +2,7 @@
 
 # LA NATURE
 
-LA NATURE is a original Wordpress blog theme that I designed and developed.
+LA NATURE is an original Wordpress blog theme that I designed and developed.
 
 
 ## Major skills for development
@@ -28,7 +28,7 @@ My design steps.
 ### 2. Set the goal - What's the goal?
 
 - Make a blog theme which catches eyes of bloggers and readers.
-- Make a theme which bloggers can show their pictures beautifully.
+- Make a theme that bloggers can use to show their pictures beautifully.
 
 ### 3. Wireframing
 
@@ -57,6 +57,6 @@ I started coding for making a blog layout first, then added PHP codes to generat
 ## The more things To Do
 * Add animation with CSS or JavaScript.
 * Add Popular Posts.
-* ADD Instargram API.
+* Add Instagram API.
 * Optimize SEO.
 
