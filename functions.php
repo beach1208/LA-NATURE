@@ -73,3 +73,10 @@ add_action('widgets_init', 'widgetarea_init');
 
 // remove login as
 add_filter('comment_form_logged_in', '__return_empty_string');
+
+
+//remove margin-top 32px
+function remove_admin_login_header() {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'remove_admin_login_header');
