@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>LA NATURE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <?php wp_head(); ?>
+<link rel="shortcut icon" href="http://la-nature-blog.nagisa-kojima.com/wp-content/uploads/2019/01/favicon.ico">
 </head>
 <body <?php body_class(); ?>>
 
