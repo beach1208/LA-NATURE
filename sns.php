@@ -17,9 +17,5 @@ $title_encode = urlencode(get_the_title()) . '｜' . get_bloginfo('name');
       </a>
     </li>
 
-    <!-- <li class="hatena">
-      <a href="//b.hatena.ne.jp/entry/<?php echo $url_encode ?>" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=510');return false;"><i class="fa fa-hatena"></i>
-     </a>
-    </li> -->
   </ul>
 </div>

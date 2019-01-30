@@ -1,4 +1,4 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -13,9 +13,9 @@
 
 <div class="wrapper">
 
-    <header id="header">
+<header id="header">
   
-    <div class="social-icons">
+<div class="social-icons">
       
     <ul>
        <li class="home">
@@ -27,11 +27,12 @@
     'container' => 'nav',
     'container-class' => 'header-top-nav',
     'container-id' => 'header-top-nav',
-    'fallback_cb' => ' '
+    'fallback_cb' => ' ',
 )); ?>
    
 </ul>
-            </div>
+</div>
+<!-- End of social icons -->
 
         <div class="header-inner">
        
@@ -54,7 +55,7 @@
     'container' => 'nav',
     'menu_class' => 'nav',
     'container-id' => 'header-nav',
-    'fallback_cb' => ' ',
+    'fallback_cb' => ' '
 )); ?>
  </div>
  

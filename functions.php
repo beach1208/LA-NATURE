@@ -12,8 +12,9 @@ function my_styles()
 add_action('wp_enqueue_scripts', 'my_styles');
 
 function my_js(){
+
   wp_enqueue_script('jqueryMobile_js', 'https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js', array('jquery'), '', true);
-  wp_enqueue_script('main_js', get_template_directory_uri() . '/script.js', array('jquery'), '', true);
+  wp_enqueue_script('main_js', get_template_directory_uri() . '/script.js');
 }
 
 add_action('wp_enqueue_scripts', 'my_js');
