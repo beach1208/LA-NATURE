@@ -6,6 +6,27 @@
     <title>LA NATURE</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- General -->
+<meta property="og:title" content="LA NATURE" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://la-nature-blog.nagisa-kojima.com/" />
+<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/thumb.png" />
+<meta property="og:site_name"  content="LA NATURE" />
+<meta property="og:description" content="Blog" />
+
+<!--  Facebook -->
+<meta property="fb:app_id" content="315773009282645" />
+<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/img/thumb.png" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@Twitter" />
+<meta name="twitter:title" content="LA NATURE" />
+<meta name="twitter:url" content="http://la-nature-blog.nagisa-kojima.com/" />
+<meta name="twitter:description" content="LA NATURE" />
+<meta name="twitter:image" content="<?php echo get_template_directory_uri(); ?>/img/thumb.png" />
+
+
 <?php wp_head(); ?>
 <link rel="shortcut icon" href="http://la-nature-blog.nagisa-kojima.com/wp-content/uploads/2019/01/favicon.ico">
 </head>
